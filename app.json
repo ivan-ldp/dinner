@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/dingdan/dingdan",
     "pages/my/my"
   ],
   "window": {
@@ -23,7 +23,7 @@
         "selectedIconPath": "images/首页.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/index/index",
         "text": "订单",
         "iconPath": "images/订单.png",
         "selectedIconPath": "images/订单.png"
