@@ -1,4 +1,89 @@
 /**index.wxss**/
+.title {
+ text-align: center;
+ margin-top: 60rpx;
+ font-size: 40rpx;
+ font-weight: bold;
+}
+.address{
+   text-align: center;
+   margin-top: 50rpx;
+}
+.discount{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.manjian{
+  margin-left:50rpx; 
+  width: 40rpx;
+  border: 1px solid red;
+  color: red;
+}
+.youhui{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.dot{
+  margin-top:30rpx;
+  /* border-bottom: 1px solid red; */
+  /* border-top:1px solid red;  */
+  height: 450rpx;
+  margin:0 5rpx; 
+  display: flex;
+  flex-wrap: wrap;
+}
+.module{
+  position: relative;
+  /* border: 1px solid blue; */
+  width: 240rpx;
+  text-align: center;
+  font-size: 35rpx;
+  bottom: 0;
+  margin: 10rpx 3rpx;
+}
+.content{
+  position: absolute;
+  margin-left: 55rpx;
+  bottom: 0;
+}
+.photo{
+  text-align: center;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;

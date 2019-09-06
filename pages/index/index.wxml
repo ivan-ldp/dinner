@@ -1,5 +1,75 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:key wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="title">悟空点餐智慧餐厅</view>
+<view class='address'>
+洛阳市北航科技园3号楼10层k9021
+</view>
+<view class='discount'>
+<view class='manjian'>满减</view>
+<view class='youhui'>满400减100，满100减10，满200减20</view>
+</view>
+<view class='dot'>
+<view class='module'>
+<image src="../../images/扫一扫.png" class='photo'></image>
+<view class='content'>扫一扫下单</view>
+</view>
+<view class='module'>
+<image src="../../images/外卖.png" class='photo'></image>
+<view class='content'>外卖下单</view>
+</view>
+<view class='module'>
+<image src="../../images/预约.png" class='photo'></image>
+<view class='content'>预约下单</view>
+</view>
+<view class='module'>
+<image src="../../images/推荐.png" class='photo'></image>
+<view class='content'>推荐好友</view>
+</view>
+<view class='module'>
+<image src="../../images/商铺.png" class='photo'></image>
+<view class='content'>商铺位置</view>
+</view>
+<view class='module'>
+<image src="../../images/电话联系.png" class='photo'></image>
+<view class='content'>电话联系</view>
+</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--index.wxml-->
-<view class="container">
+<!-- <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -10,4 +80,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-</view>
+</view> -->
