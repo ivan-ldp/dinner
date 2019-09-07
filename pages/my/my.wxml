@@ -3,7 +3,7 @@
 
 
 
-<image src="../../images/我的-头像.png" class="picture"></image>
+<image src="../../images/toxiang.png" class="picture"></image>
 <view class='header'>获取昵称与头像</view>
 
 </view>
