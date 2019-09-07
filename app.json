@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/dingdan/dingdan",
     "pages/my/my"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,28 +19,21 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/首页.png",
-        "selectedIconPath": "images/首页.png"
+        "iconPath": "images/sy.png",
+        "selectedIconPath": "images/sy.png"
       },
       {
         "pagePath": "pages/dingdan/dingdan",
-        
         "text": "订单",
-        "iconPath": "images/订单.png",
-        "selectedIconPath": "images/订单.png"
+        "iconPath": "images/dingdan.png",
+        "selectedIconPath": "images/dingdan.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/我的.png",
-        "selectedIconPath": "images/我的.png"
+        "iconPath": "images/wd.png",
+        "selectedIconPath": "images/wd.png"
       }
     ]
-  },
-
-  "sitemapLocation": "sitemap9.json",
-
-
-  "sitemapLocation": "sitemap20.json"
-
+  }
 }

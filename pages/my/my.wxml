@@ -9,33 +9,33 @@
 </view>
 <view class="clear">
 <view class="format">
-<image src="../../images/我的-店铺简介.png" class="photo"></image>
+<image src="../../images/dianpujeishao.png" class="photo"></image>
 <view class='content'>店家简介</view>
-<image src="../../images/小箭头.png" class="jiantou"></image>
+<image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
 <view class="format">
-<image src="../../images/我的-联系我们.png" class="photo"></image>
+<image src="../../images/lxwm.png" class="photo"></image>
 <view class='content'>联系我们</view>
-<image src="../../images/小箭头.png" class="jiantou"></image>
+<image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
 
 <view class="format">
-<image src="../../images/我的-联系客服.png" class="photo"> </image>
+<image src="../../images/lianxikefu.png" class="photo"> </image>
 <view class='content'>联系客服</view>
-<image src="../../images/小箭头.png" class="jiantou"></image>
+<image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
 <view class="format">
-<image src="../../images/我的-我的优惠卷.png" class="photo"></image>
+<image src="../../images/yhj.png" class="photo"></image>
 <view class='content'>优惠卷单</view>
-<image src="../../images/小箭头.png" class="jiantou"></image>
+<image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
 <view class="format">
-<image src="../../images/我的-我的佣金.png" class="photo"></image>
+<image src="../../images/yj.png" class="photo"></image>
 <view class='content'>我的佣金</view>
-<image src="../../images/小箭头.png" class="jiantou"></image>
+<image src="../../images/jianto.png" class="jiantou"></image>
 </view> 
 </view>

@@ -105,14 +105,14 @@ wx.navigateTo({
         state: "待付款",
         time: "2018-09-30 14:00-16:00",
         status: "已结束",
-        url: "../../images/美食1.jpeg",
+        url: "../../images/ms1.jpeg",
         money: "132"
       }, {
         name: "532521652",
         state: "配送中",
         time: "2018-10-12 18:00-20:00",
         status: "未开始",
-        url: "../../images/美食2.jpeg",
+        url: "../../images/ms2.jpeg",
         money: "205"
       }]
     })
@@ -125,7 +125,7 @@ wx.navigateTo({
         state: "待付款",
         time: "2018-10-14 14:00-16:00",
         status: "未开始",
-        url: "../../images/美食3.jpeg",
+        url: "../../images/ms3.jpeg",
         money: "186"
       }],
     })
@@ -138,7 +138,7 @@ wx.navigateTo({
         state: "已付款",
         time: "2018-10-4 10:00-12:00",
         status: "未开始",
-        url: "../../images/美食1.jpeg",
+        url: "../../images/ms1.jpeg",
         money: "122"
       }],
     })
@@ -150,7 +150,7 @@ wx.navigateTo({
         state: "配送中",
         time: "2018-09-30 14:00-16:00",
         status: "已结束",
-        url: "../../images/美食2.jpeg",
+        url: "../../images/ms2.jpeg",
         money: "132"
       }]
     })
@@ -162,7 +162,7 @@ wx.navigateTo({
         state: "已完成",
         time: "2018-09-30 14:00-16:00",
         status: "已结束",
-        url: "../../images/美食1.jpeg",
+        url: "../../images/ms1.jpeg",
         money: "132"
       }]
     })

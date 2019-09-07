@@ -17,27 +17,27 @@
 </view>
 <view class='dot'>
 <view class='module'>
-<image src="../../images/扫一扫.png" class='photo'></image>
+<image src="../../images/saoyisao.png" class='photo'></image>
 <view class='content'>扫一扫下单</view>
 </view>
 <view class='module'>
-<image src="../../images/外卖.png" class='photo'></image>
+<image src="../../images/waimai.png" class='photo'></image>
 <view class='content'>外卖下单</view>
 </view>
 <view class='module'>
-<image src="../../images/预约.png" class='photo'></image>
+<image src="../../images/yy.png" class='photo'></image>
 <view class='content'>预约下单</view>
 </view>
 <view class='module'>
-<image src="../../images/推荐.png" class='photo'></image>
+<image src="../../images/tueijian.png" class='photo'></image>
 <view class='content'>推荐好友</view>
 </view>
 <view class='module'>
-<image src="../../images/商铺.png" class='photo'></image>
+<image src="../../images/dianpu.png" class='photo'></image>
 <view class='content'>商铺位置</view>
 </view>
 <view class='module'>
-<image src="../../images/电话联系.png" class='photo'></image>
+<image src="../../images/dianhua.png" class='photo'></image>
 <view class='content'>电话联系</view>
 </view>
 </view>
