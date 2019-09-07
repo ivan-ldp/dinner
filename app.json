@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/dingdan/dingdan",
     "pages/my/my"
-   
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,6 +25,7 @@
       },
       {
         "pagePath": "pages/dingdan/dingdan",
+        
         "text": "订单",
         "iconPath": "images/订单.png",
         "selectedIconPath": "images/订单.png"
@@ -36,5 +37,7 @@
         "selectedIconPath": "images/我的.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap9.json"
+
 }
