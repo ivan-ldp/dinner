@@ -23,7 +23,7 @@
         "selectedIconPath": "images/首页.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/dingdan/dingdan",
         "text": "订单",
         "iconPath": "images/订单.png",
         "selectedIconPath": "images/订单.png"
