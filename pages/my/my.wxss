@@ -12,14 +12,14 @@
 .picture{
   width: 140rpx;
   height: 140rpx;
-  padding-left: 166rpx;
+  padding-left: 89rpx;
   padding-top: 160rpx;
   
 }
 
 .header{
   padding-top: 216rpx;
-  padding-right: 132rpx;
+  padding-right: 224rpx;
   float: right;
 }
 
@@ -42,11 +42,20 @@ height: 60rpx;
 width: 60rpx;
 text-align: center;
 margin-top:12rpx;
-margin-left: 259rpx;
+margin-left: 53rpx;
 }
 .content{
 height: 80rpx;
 line-height: 80rpx;
 padding-left: 53rpx;
 color: greenyellow；
+}
+.jiantou{
+  height: 30rpx;
+  width: 30rpx;
+ float: right;
+ margin-left: 50%;
+ margin-top:28rpx;
+
+
 }
