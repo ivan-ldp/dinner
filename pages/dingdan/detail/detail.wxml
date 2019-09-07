@@ -1,1 +1,76 @@
-<!--pages/wy/wy.wxml-->
+<view class="container">
+  
+  <view class="goods-list">
+    <view class="list-title" style=" font-weight: bold;">商品信息</view>
+  </view>
+<view class="goods-info">
+ <view class="row-box">
+      <view class="row-label">订单号</view>
+      <view class="right-text"> 635219506{{orderDetail.freightFee}}</view>
+    </view>
+    <view class="row-box">
+      <view class="row-label">下单时间</view>
+      <view class="right-text">2018-09-30 15:45</view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+  <view class="goods-info">
+   <view class="row-box">
+      <view class="row-label">商品名称</view>
+    </view>
+
+
+
+
+     <view class="row-box1">
+      <view class="row-label" style="color: #756f6fe3">澳洲龙虾</view>
+       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
+       <view class="row-label" style="color: #756f6fe3">价格：</view>
+      <view class="right-text" style="color: #756f6fe3">¥ 888{{orderDetail.totalAmount}}</view>
+    </view>
+    <view class="row-box1"></view>
+
+
+    <view class="row-box1">
+      <view class="row-label" style="color: #756f6fe3">麻辣爆肚</view>
+       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
+       <view class="row-label" style="color: #756f6fe3">价格：</view>
+      <view class="right-text" style="color: #756f6fe3">¥ 100{{orderDetail.totalAmount}}</view>
+    </view>
+    <view class="row-box1"></view>
+
+    <view class="row-box1">
+      <view class="row-label" style="color: #756f6fe3">葱炒河豚</view>
+       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
+       <view class="row-label" style="color: #756f6fe3">价格：</view>
+      <view class="right-text" style="color: #756f6fe3">¥ 600{{orderDetail.totalAmount}}</view>
+    </view>
+    <view class="row-box1"></view>
+
+
+
+
+
+   
+ 
+    
+    <view class="row-box">
+      <view class="row-label">运费</view>
+      <view class="right-text">¥ 20{{orderDetail.freightFee}}</view>
+    </view>
+    <view class="row-box">
+      <view class="row-label">总金额</view>
+      <view class="right-text">¥ 1608{{orderDetail.totalAmount}}</view>
+    </view>
+
+  </view>
+</view>

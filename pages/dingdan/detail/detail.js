@@ -1,4 +1,4 @@
-// pages/wy/wy.js
+
 Page({
 
   /**
@@ -63,4 +63,5 @@ Page({
   onShareAppMessage: function () {
 
   }
+  
 })

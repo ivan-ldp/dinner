@@ -35,5 +35,6 @@
         "selectedIconPath": "images/wd.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap6.json"
 }
