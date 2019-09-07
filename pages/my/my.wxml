@@ -3,8 +3,16 @@
 
 
 
-<image src="../../images/toxiang.png" class="picture"></image>
-<view class='header'>获取昵称与头像</view>
+<view class="container" >
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else class="mingcheng">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      
+    </block>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
 
 </view>
 <view class="clear">
