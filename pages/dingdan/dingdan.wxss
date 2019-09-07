@@ -21,9 +21,9 @@
 }
  
 .on {
-  border-bottom:1px solid #ddd4d4dc;
+  border-bottom:2px solid rgba(255, 255, 255, 0.664);
   font-weight: bold;
-  color: #555252c7;
+  color: #756f6fe3;
 }
  
 .navTopList {

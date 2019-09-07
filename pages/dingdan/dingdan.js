@@ -77,29 +77,29 @@ Page({
   },
   alreadyShow: function(){
     this.setData({
-      alreadyOrder: [{ name: "635219506", state: "待付款", time: "2018-09-30 14:00-16:00", status: "已结束", url: "", money: "132" }, { name: "532521652", state: "配送中", time: "2018-10-12 18:00-20:00", status: "未开始", url: "", money: "205" }]
+      alreadyOrder: [{ name: "635219506", state: "待付款", time: "2018-09-30 14:00-16:00", status: "已结束", url: "../../images/美食1.jpeg", money: "132" }, { name: "532521652", state: "配送中", time: "2018-10-12 18:00-20:00", status: "未开始", url: "../../images/美食2.jpeg", money: "205" }]
     })
   },
  
   waitPayShow:function(){
     this.setData({
-      waitPayOrder: [{ name: "100454577", state: "待付款", time: "2018-10-14 14:00-16:00", status: "未开始", url: "", money: "186" }],
+      waitPayOrder: [{ name: "100454577", state: "待付款", time: "2018-10-14 14:00-16:00", status: "未开始", url: "../../images/美食3.jpeg", money: "186" }],
     })
   },
  
   lostShow: function () {
     this.setData({
-      lostOrder: [{ name: "931717287", state: "已付款", time: "2018-10-4 10:00-12:00", status: "未开始", url: "", money: "122" }],
+      lostOrder: [{ name: "931717287", state: "已付款", time: "2018-10-4 10:00-12:00", status: "未开始", url: "../../images/美食1.jpeg", money: "122" }],
     })
   },
  pszShow: function(){
     this.setData({
-      pszOrder: [{ name: "5526265136", state: "配送中", time: "2018-09-30 14:00-16:00", status: "已结束", url: "", money: "132" }]
+      pszOrder: [{ name: "5526265136", state: "配送中", time: "2018-09-30 14:00-16:00", status: "已结束", url: "../../images/美食2.jpeg", money: "132" }]
     })
   },
  ywcShow: function(){
     this.setData({
-      ywcOrder: [{ name: "555555554", state: "已完成", time: "2018-09-30 14:00-16:00", status: "已结束", url: "", money: "132" }]
+      ywcOrder: [{ name: "555555554", state: "已完成", time: "2018-09-30 14:00-16:00", status: "已结束", url: "../../images/美食1.jpeg", money: "132" }]
     })
   },
   
