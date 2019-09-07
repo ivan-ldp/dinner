@@ -19,8 +19,18 @@ Page({
     autoplay: true,  //是否自动轮播
     interval: 3000,  //间隔时间
     duration: 3000,  //滑动时间
+    Hei: "" ,
+    height:0
   },
-
+  imgH: function (e) {
+    var winWid = wx.getSystemInfoSync().windowWidth;         //获取当前屏幕的宽度
+    var imgh = e.detail.height;　　　　　　　　　　　　　　　　//图片高度
+    var imgw = e.detail.width;
+    var swiperH = winWid * imgh / imgw;　　　　　　　
+    this.setData({
+      Hei: swiperH　　　　　　　　//设置高度
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

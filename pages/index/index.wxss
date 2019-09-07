@@ -6,6 +6,11 @@
  font-size: 40rpx;
  font-weight: bold;
 }
+.slide-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .address{
    text-align: center;
    margin-top: 50rpx;
@@ -15,16 +20,23 @@
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
 }
 .manjian{
-  margin-left:50rpx; 
-  width: 40rpx;
+  margin-left:20rpx; 
+  width: 90rpx;
   border: 1px solid red;
   color: red;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
 }
 .youhui{
-  margin-left: 30rpx;
-  margin-top: 20rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
 }
 .dot{
   margin-top:30rpx;
