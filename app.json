@@ -35,5 +35,6 @@
         "selectedIconPath": "images/我的.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap10.json"
 }

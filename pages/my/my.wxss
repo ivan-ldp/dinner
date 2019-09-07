@@ -1,1 +1,52 @@
 /* pages/my/my.wxss */
+.body{
+  background-color:  greenyellow;
+  width: 100%;
+  height: 400rpx;
+}
+.title {
+ font-size: 40rpx;
+ color: white;
+}
+
+.picture{
+  width: 140rpx;
+  height: 140rpx;
+  padding-left: 166rpx;
+  padding-top: 160rpx;
+  
+}
+
+.header{
+  padding-top: 216rpx;
+  padding-right: 132rpx;
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.format{
+  width: 100%;
+  height: 80rpx;
+  color: gray;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.photo{
+height: 60rpx;
+width: 60rpx;
+text-align: center;
+margin-top:12rpx;
+margin-left: 259rpx;
+}
+.content{
+height: 80rpx;
+line-height: 80rpx;
+padding-left: 53rpx;
+color: greenyellow；
+}
