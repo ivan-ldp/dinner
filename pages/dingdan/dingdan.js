@@ -27,7 +27,7 @@ Page({
 xiangqing:function(e){
 console.log(12121331);
 wx.navigateTo({
-  url: '/pages/dingdan/wy/wy'
+  url: '/pages/dingdan/detail/detail'
 })
 },
   /**
