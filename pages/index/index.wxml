@@ -2,44 +2,44 @@
   <block wx:key wx:for="{{imgUrls}}">
     <swiper-item>
       <navigator url="{{item.link}}" hover-class="navigator-hover">
-        <image src="{{item.url}}" class="slide-image"  mode="widthFix" bindload='imgH' />
+        <image src="{{item.url}}" class="slide-image" mode="widthFix" bindload='imgH' />
       </navigator>
     </swiper-item>
   </block>
 </swiper>
 <view class="title">悟空点餐智慧餐厅</view>
 <view class='address'>
-洛阳市北航科技园3号楼10层k9021
+  洛阳市北航科技园3号楼10层k9021
 </view>
 <view class='discount'>
-<view class='manjian'>满减</view>
-<view class='youhui'>满400减100，满100减10，满200减20</view>
+  <view class='manjian'>满减</view>
+  <view class='youhui'>满400减100，满100减10，满200减20</view>
 </view>
 <view class='dot'>
-<view class='module'>
-<image src="../../images/saoyisao.png" class='photo'></image>
-<view class='content'>扫一扫下单</view>
-</view>
-<view class='module'>
-<image src="../../images/waimai.png" class='photo'></image>
-<view class='content'>外卖下单</view>
-</view>
-<view class='module'>
-<image src="../../images/yy.png" class='photo'></image>
-<view class='content'>预约下单</view>
-</view>
-<view class='module'>
-<image src="../../images/tueijian.png" class='photo'></image>
-<view class='content'>推荐好友</view>
-</view>
-<view class='module'>
-<image src="../../images/dianpu.png" class='photo'></image>
-<view class='content'>商铺位置</view>
-</view>
-<view class='module'>
-<image src="../../images/dianhua.png" class='photo'></image>
-<view class='content'>电话联系</view>
-</view>
+  <view class='module'>
+    <image src="../../images/saoyisao.png" class='photo'></image>
+    <view class='content'>扫一扫下单</view>
+  </view>
+  <view class='module' bindtap='jump'>
+    <image src="../../images/waimai.png" class='photo' ></image>
+    <view class='content'>外卖下单</view>
+  </view>
+  <view class='module'>
+    <image src="../../images/yy.png" class='photo'></image>
+    <view class='content'>预约下单</view>
+  </view>
+  <view class='module'>
+    <image src="../../images/tueijian.png" class='photo'></image>
+    <view class='content'>推荐好友</view>
+  </view>
+  <view class='module'>
+    <image src="../../images/dianpu.png" class='photo'></image>
+    <view class='content'>商铺位置</view>
+  </view>
+  <view class='module'>
+    <image src="../../images/dianhua.png" class='photo'></image>
+    <view class='content'>电话联系</view>
+  </view>
 </view>
 
 

@@ -79,6 +79,13 @@ Page({
   onReachBottom: function () {
     
   },
+  
+  jump: function (e) {
+    console.log(12121331);
+    wx.navigateTo({
+      url: '/pages/index/memu/memu'
+    })
+  },
 
   /**
    * 用户点击右上角分享
@@ -88,7 +95,20 @@ Page({
   }
 })
 
+// jump:function(){
+//   wx.navigateTo({
+//     url: 'pages/index/memu1/memu',
+//     success:function(res){
 
+//     },
+//     fail:function(res){
+
+//     },
+//     complete:function(res){
+
+//     },
+//   })
+// }
 
 
 
