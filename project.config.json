@@ -66,6 +66,14 @@
 					"id": -1,
 					"name": "pages/dingdan/detail/detail",
 					"pathName": "pages/dingdan/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/dianpuxiangqing/dianpuxiangqing",
+					"pathName": "pages/my/dianpuxiangqing/dianpuxiangqing",
+					"query": "",
 					"scene": null
 				}
 			]

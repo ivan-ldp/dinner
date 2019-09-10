@@ -17,20 +17,20 @@
 
 </view>
 <view class="clear">
-<view class="format">
+<view class="format" >
 <image src="../../images/dianpujeishao.png" class="photo"></image>
 <view class='content'>店家简介</view>
 <image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
-<view class="format">
+<view class="format" bindtap='dianjia'>
 <image src="../../images/lxwm.png" class="photo"></image>
-<view class='content'>联系我们</view>
+<view class='content'>关于我们</view>
 <image src="../../images/jianto.png" class="jiantou"></image>
 </view>
 
 
-<view class="format">
+<view class="format"   bindtap="calling">
 <image src="../../images/lianxikefu.png" class="photo"> </image>
 <view class='content'>联系客服</view>
 <image src="../../images/jianto.png" class="jiantou"></image>

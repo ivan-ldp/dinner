@@ -9,6 +9,32 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  }, 
+  dianjia: function (e) {
+    console.log(12121331);
+    wx.navigateTo({
+      url: '/pages/my/dianpuxiangqing/dianpuxiangqing'
+    })
+  }, calling: function () {
+
+    wx.makePhoneCall({
+
+      phoneNumber: '18538749150',
+
+      success: function () {
+
+        console.log("拨打电话成功！")
+
+      },
+
+      fail: function () {
+
+        console.log("拨打电话失败！")
+
+      }
+
+    })
+
   },
   //事件处理函数
  
