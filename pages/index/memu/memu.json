@@ -1,4 +1,8 @@
 {
-  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "外卖下单",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
   "usingComponents": {}
 }

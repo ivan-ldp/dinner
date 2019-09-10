@@ -59,3 +59,48 @@
     color: #000;
     border-bottom: 1rpx solid #eee;
 }
+.tp{
+height: 80rpx;
+width: 75rpx;
+text-align: center;
+margin-top: 1rpx;
+margin-left: 74rpx;
+
+}
+.goods-info1 .row-box1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+padding: 24rpx 30rpx 24rpx 30rpx;
+font-size: 28rpx;
+color: #000;
+
+}
+.goods-info1{
+  position:relative;
+  left: -50rpx;
+}
+
+.right-text1{
+    position:absolute ;
+  left: 228rpx;
+  top: 54rpx;
+}
+.right-text2{
+    position:absolute ;
+  left: 176rpx;
+  top: 140rpx;
+}
+.right-text3{
+    position:absolute ;
+  left: 300rpx;
+  top: 140rpx;
+}
+.goods-list .list-title1 {
+  margin-top: -30px;
+  background-color: #eee;
+color: #000;
+padding: 10rpx 0 10rpx 20rpx;
+
+}

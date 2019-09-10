@@ -117,3 +117,13 @@
 .usermotto {
   margin-top: 200px;
 }
+
+
+#hytj{
+   position:absolute ;
+  left: 0rpx;
+  top: 152rpx;
+}
+button::after {
+  border: none
+}

@@ -20,7 +20,53 @@ Page({
     interval: 3000,  //间隔时间
     duration: 3000,  //滑动时间
     Hei: "" ,
-    height:0
+    height:0,
+     result: "",//扫一扫
+  }, calling: function () {
+
+    wx.makePhoneCall({
+
+      phoneNumber: '18538749150',
+
+      success: function () {
+
+        console.log("拨打电话成功！")
+
+      },
+
+      fail: function () {
+
+        console.log("拨打电话失败！")
+
+      }
+
+    })
+
+  },
+  //扫一扫
+  scancode: function () {
+    let that = this;
+    let result;
+    wx.scanCode({
+      success: (res) => {
+        this.result = res.result;
+        that.setData({
+          result: this.result
+        })
+      }
+    })
+  }, getLocation: function () {
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res) {
+        wx.openLocation({//​使用微信内置地图查看位置。
+          latitude:  34.640422, //要去的纬度-地址
+          longitude: 112.371703,//要去的经度-地址
+          name: "风味小店",
+          address: '洛阳市北航科技园'
+        })
+      }
+    })
   },
   imgH: function (e) {
     var winWid = wx.getSystemInfoSync().windowWidth;         //获取当前屏幕的宽度
