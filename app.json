@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/dingdan/dingdan",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/index/memu/memu",
+    "pages/dingdan/detail/detail"
     
   ],
   "window": {

@@ -13,7 +13,7 @@ Page({
   dianjia: function (e) {
     console.log(12121331);
     wx.navigateTo({
-      url: '/pages/my/dianpuxiangqing/dianpuxiangqing'
+      url: '/pages/my/guanyuwomen/guanyuwomen'
     })
   }, calling: function () {
 

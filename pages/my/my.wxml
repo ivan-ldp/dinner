@@ -4,47 +4,51 @@
 
 
 
-<view class="container" >
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
-    <block wx:else class="mingcheng">
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      
-    </block>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+      <block wx:else class="mingcheng">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+      </block>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
   </view>
-</view>
 
 </view>
 <view class="clear">
-<view class="format" >
-<image src="../../images/dianpujeishao.png" class="photo"></image>
-<view class='content'>店家简介</view>
-<image src="../../images/jianto.png" class="jiantou"></image>
-</view>
+  <view class="format">
+    <image src="../../images/yj.png" class="photo"></image>
+    <view class='content'>我的佣金</view>
+    <image src="../../images/jianto.png" class="jiantou"></image>
+  </view>
+ <view class="format">
+    <image src="../../images/dz.png" class="photo"></image>
+    <view class='content'>我的地址</view>
+    <image src="../../images/jianto.png" class="jiantou"></image>
+  </view>
 
-<view class="format" bindtap='dianjia'>
-<image src="../../images/lxwm.png" class="photo"></image>
-<view class='content'>关于我们</view>
-<image src="../../images/jianto.png" class="jiantou"></image>
-</view>
+  <view class="format" bindtap="calling">
+    <image src="../../images/lianxikefu.png" class="photo"> </image>
+    <view class='content'>联系客服</view>
+    <image src="../../images/jianto.png" class="jiantou"></image>
+  </view>
+
+  <view class="format">
+    <image src="../../images/yhj.png" class="photo"></image>
+    <view class='content'>优惠卷单</view>
+    <image src="../../images/jianto.png" class="jiantou"></image>
+  </view>
+  <view class="format" bindtap='dianjia'>
+    <image src="../../images/lxwm.png" class="photo"></image>
+    <view class='content'>关于我们</view>
+    <image src="../../images/jianto.png" class="jiantou"></image>
+  </view>
 
 
-<view class="format"   bindtap="calling">
-<image src="../../images/lianxikefu.png" class="photo"> </image>
-<view class='content'>联系客服</view>
-<image src="../../images/jianto.png" class="jiantou"></image>
-</view>
+  
 
-<view class="format">
-<image src="../../images/yhj.png" class="photo"></image>
-<view class='content'>优惠卷单</view>
-<image src="../../images/jianto.png" class="jiantou"></image>
-</view>
 
-<view class="format">
-<image src="../../images/yj.png" class="photo"></image>
-<view class='content'>我的佣金</view>
-<image src="../../images/jianto.png" class="jiantou"></image>
-</view> 
+
+
 </view>

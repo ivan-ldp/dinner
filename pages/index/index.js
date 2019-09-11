@@ -126,8 +126,7 @@ Page({
     
   },
   
-  jump: function (e) {
-    console.log(12121331);
+  jump: function () {
     wx.navigateTo({
       url: '/pages/index/memu/memu'
     })
