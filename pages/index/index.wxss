@@ -2,7 +2,7 @@
 
 .title {
  text-align: center;
- margin-top: 60rpx;
+ margin-top: 50rpx;
  font-size: 40rpx;
  font-weight: bold;
 }
@@ -11,12 +11,21 @@
   height: auto;
   display: block;
 }
+.address1{
+
+   text-align: center;
+   margin-top: 40rpx;
+   color: rgba(99, 97, 97, 0.932);
+  
+}
 .address{
    text-align: center;
-   margin-top: 50rpx;
+    font-size: 35rpx;
+   margin-top: 40rpx;
+  
 }
 .discount{
-  margin-top: 40rpx;
+  margin-top: 30rpx;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -33,13 +42,15 @@
   font-size: 30rpx;
 }
 .youhui{
+  margin-left: 20rpx;
   font-size: 30rpx;
   height: 50rpx;
   line-height: 50rpx;
   text-align: center;
+  
 }
 .dot{
-  margin-top:30rpx;
+  padding-top:15%;
   /* border-bottom: 1px solid red; */
   /* border-top:1px solid red;  */
   height: 450rpx;
@@ -63,11 +74,15 @@
 }
 .photo{
   text-align: center;
-  width: 130rpx;
-  height: 130rpx;
+  width: 110rpx;
+  height: 110rpx;
 }
 
-
+.content1{
+  position: absolute;
+  margin-left: 35rpx;
+  bottom: 0;
+}
 
 
 

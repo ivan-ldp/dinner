@@ -9,13 +9,20 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  }, wddz: function (e) {
+    console.log(12121331);
+    wx.navigateTo({
+      url: "../address/address"
+    })
   }, 
   dianjia: function (e) {
     console.log(12121331);
     wx.navigateTo({
-      url: '/pages/my/guanyuwomen/guanyuwomen'
+      url: '../guanyuwomen/guanyuwomen'
     })
-  }, calling: function () {
+  }, 
+  
+  calling: function () {
 
     wx.makePhoneCall({
 

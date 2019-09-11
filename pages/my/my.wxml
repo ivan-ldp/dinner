@@ -22,7 +22,7 @@
     <view class='content'>我的佣金</view>
     <image src="../../images/jianto.png" class="jiantou"></image>
   </view>
- <view class="format">
+ <view class="format" bindtap="wddz">
     <image src="../../images/dz.png" class="photo"></image>
     <view class='content'>我的地址</view>
     <image src="../../images/jianto.png" class="jiantou"></image>

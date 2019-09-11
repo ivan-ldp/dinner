@@ -111,7 +111,7 @@ wx.navigateTo({
         name: "532521652",
         state: "配送中",
         time: "2018-10-12 18:00-20:00",
-        status: "未开始",
+          status: "配送中",
         url: "../../images/ms2.jpeg",
         money: "205"
       }]
@@ -124,7 +124,7 @@ wx.navigateTo({
         name: "100454577",
         state: "待付款",
         time: "2018-10-14 14:00-16:00",
-        status: "未开始",
+        status: "待付款",
         url: "../../images/ms3.jpeg",
         money: "186"
       }],
@@ -137,7 +137,7 @@ wx.navigateTo({
         name: "931717287",
         state: "已付款",
         time: "2018-10-4 10:00-12:00",
-        status: "未开始",
+        status: "已付款",
         url: "../../images/ms1.jpeg",
         money: "122"
       }],
@@ -149,7 +149,7 @@ wx.navigateTo({
         name: "5526265136",
         state: "配送中",
         time: "2018-09-30 14:00-16:00",
-        status: "已结束",
+        status: "配送中",
         url: "../../images/ms2.jpeg",
         money: "132"
       }]

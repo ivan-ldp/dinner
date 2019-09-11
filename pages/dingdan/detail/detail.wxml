@@ -85,5 +85,5 @@
 </view>
 
 <view>
-<button style="background-color: #eee; color: red;font-weight: bold;">付款</button>
+<button style="background-color: #eee;font-weight: bold;">付款</button>
 </view>

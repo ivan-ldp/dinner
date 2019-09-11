@@ -1,6 +1,6 @@
 /* pages/my/my.wxss */
 .body{
-background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568454390&di=051fbedd662de8f491e42e5e0f1817d3&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.vice.cn%2Fcontentimage%2F19942%2F14524851901452449871MXXX6970.jpg);
+background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568190033287&di=b71f0b0562083bd174676be9d528b75b&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201302%2F19%2F20130219192747_8JZvN.jpeg);
   width: 100%;
   height: 400rpx;
 }

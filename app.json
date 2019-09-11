@@ -4,8 +4,10 @@
     "pages/dingdan/dingdan",
     "pages/my/my",
     "pages/index/memu/memu",
-    "pages/dingdan/detail/detail"
-    
+    "pages/dingdan/detail/detail",
+    "pages/address/address",
+    "pages/addAddress/addAddress",
+    "pages/guanyuwomen/guanyuwomen"
   ],
   "window": {
     "backgroundTextStyle": "light",

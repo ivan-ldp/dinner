@@ -75,6 +75,12 @@
 					"pathName": "pages/my/dianpuxiangqing/dianpuxiangqing",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addAddress/addAddress",
+					"pathName": "pages/addAddress/addAddress",
+					"scene": null
 				}
 			]
 		}
