@@ -1,4 +1,5 @@
-let keys = 'SGXBZ-6X3K6-NYLSF-MALZD-QC6PK-BABOS';
+let keys = 'WCIBZ-AU66P-F6NDC-V73VE-R5LIJ-Z4FJT';
+
 let _page, _this;
 //获取应用实例
 var app = getApp()

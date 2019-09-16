@@ -101,7 +101,7 @@ wx.navigateTo({
   alreadyShow: function() {
     this.setData({
       alreadyOrder: [{
-        name: "635219506",
+        name: "20199151015685152048373989",
         state: "待付款",
         time: "2018-09-30 14:00-16:00",
         status: "已结束",

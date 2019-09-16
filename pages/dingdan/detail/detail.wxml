@@ -33,7 +33,7 @@
   <view class="goods-info">
     <view class="row-box">
       <view class="row-label">订单号</view>
-      <view class="right-text"> 635219506{{orderDetail.freightFee}}</view>
+      <view class="right-text"> 2019091510355888{{orderDetail.freightFee}}</view>
     </view>
     <view class="row-box">
       <view class="row-label">下单时间</view>
