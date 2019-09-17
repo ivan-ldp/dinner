@@ -3,6 +3,33 @@ Page({
   data: {
 
     goods: [
+      {
+
+        "name": "全部",
+
+        "type": 2,
+
+        "foods": [
+
+          {
+
+            "name": "酸爽莲藕",
+
+            "price": 60.5,
+
+            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+
+            "Count": 0,
+
+            "type": "凉菜",
+
+            "icon": "/images/ms1.jpeg",
+
+          }
+
+        ]
+
+      },
 
       {
 
@@ -58,7 +85,59 @@ Page({
 
         ]
 
-      },
+      },{
+
+        "name": "主食",
+
+        "type": 2,
+
+        "foods": [
+
+          {
+
+            "name": "酸爽莲藕",
+
+            "price": 60.5,
+
+            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+
+            "Count": 0,
+
+            "type": "凉菜",
+
+            "icon": "/images/ms1.jpeg",
+
+          }
+
+        ]
+
+      }, {
+
+        "name": "饮料",
+
+        "type": 2,
+
+        "foods": [
+
+          {
+
+            "name": "酸爽莲藕",
+
+            "price": 60.5,
+
+            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+
+            "Count": 0,
+
+            "type": "凉菜",
+
+            "icon": "/images/ms1.jpeg",
+
+          }
+
+        ]
+
+      }, 
 
 
 

@@ -1,0 +1,39 @@
+page{
+  padding-left: 37rpx;
+}
+view{
+  width: 700rpx;
+
+}
+
+.bianti {
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.dizhi {
+  padding-top: 20rpx;
+}
+
+.dianhua {
+  padding-top: 10rpx;
+}
+.dh1{
+  color: red;
+}
+.yb {
+
+  padding-top: 10rpx;
+}
+.yx1{
+  color: rgba(54, 194, 230, 0.925);
+}
+.yx {
+  padding-top: 10rpx;
+}
+.ts{
+  margin-top: 20rpx;
+   font-size: 35rpx;
+    font-weight: bold;
+}

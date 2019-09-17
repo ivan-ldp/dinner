@@ -1,57 +1,66 @@
 <view class="container">
-  
   <view class="goods-list">
-    <view class="list-title" style=" font-weight: bold;">商品信息</view>
-  </view>
+
+    <view class="goods-info1">
+      <view class="row-box1">
+        <view class="row-label">
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568006455890&di=3f9ac59133ec83aaf26440d7ef64c29f&imgtype=0&src=http%3A%2F%2Fpic3.16pic.com%2F00%2F20%2F96%2F16pic_2096492_b.jpg" class="tp"></image>
+        </view>
+        <view class="right-text1"> 预约时间:2019-09-04  08:53</view>
+        
+      </view>
+    </view>
+
+
 <view class="goods-info">
- <view class="row-box">
+      <view class="row-box">
+        <view class="row-labe">
+          <view class="right-text2">周先生:</view>
+           <view class="right-text3">18538749150</view>
+        </view>
+        
+        
+      </view>
+    </view>
+
+
+
+
+  </view>
+  <view class="goods-list">
+    <view class="list-title1" style=" font-weight: bold;">商品信息</view>
+  </view>
+  <view class="goods-info">
+    <view class="row-box">
       <view class="row-label">订单号</view>
-      <view class="right-text"> 635219506{{orderDetail.freightFee}}</view>
+      <view class="right-text"> 2019091510355888{{orderDetail.freightFee}}</view>
     </view>
     <view class="row-box">
       <view class="row-label">下单时间</view>
       <view class="right-text">2018-09-30 15:45</view>
     </view>
-</view>
+  </view>
 
 
-
-
-
-
-
-
-
-
+ 
   <view class="goods-info">
-   <view class="row-box">
-      <view class="row-label">商品名称</view>
-    </view>
-
-
-
-
-     <view class="row-box1">
-      <view class="row-label" style="color: #756f6fe3">澳洲龙虾</view>
-       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
-       <view class="row-label" style="color: #756f6fe3">价格：</view>
-      <view class="right-text" style="color: #756f6fe3">¥ 888{{orderDetail.totalAmount}}</view>
-    </view>
-    <view class="row-box1"></view>
+     <view class="goods-list">
+    <view class="list-title1" style=" font-weight: bold;">商品名称</view>
+  </view>
 
 
     <view class="row-box1">
       <view class="row-label" style="color: #756f6fe3">麻辣爆肚</view>
-       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
-       <view class="row-label" style="color: #756f6fe3">价格：</view>
+      <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
+      <view class="row-label" style="color: #756f6fe3">价格：</view>
       <view class="right-text" style="color: #756f6fe3">¥ 100{{orderDetail.totalAmount}}</view>
     </view>
     <view class="row-box1"></view>
 
     <view class="row-box1">
       <view class="row-label" style="color: #756f6fe3">葱炒河豚</view>
-       <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
-       <view class="row-label" style="color: #756f6fe3">价格：</view>
+      <view class="right-text" style="color: #756f6fe3">x1{{orderDetail.totalAmount}}</view>
+      <view class="row-label" style="color: #756f6fe3">价格：</view>
       <view class="right-text" style="color: #756f6fe3">¥ 600{{orderDetail.totalAmount}}</view>
     </view>
     <view class="row-box1"></view>
@@ -60,17 +69,21 @@
 
 
 
-   
- 
-    
+
+
+
     <view class="row-box">
       <view class="row-label">运费</view>
       <view class="right-text">¥ 20{{orderDetail.freightFee}}</view>
     </view>
     <view class="row-box">
       <view class="row-label">总金额</view>
-      <view class="right-text">¥ 1608{{orderDetail.totalAmount}}</view>
+      <view class="right-text">¥ 720{{orderDetail.totalAmount}}</view>
     </view>
 
   </view>
+</view>
+
+<view>
+<button style="background-color: #eee;font-weight: bold;">付款</button>
 </view>

@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="address-list">
+        <view class="a-address" >
+             <view class="left-text">
+                 <view class="name-tel">
+                    周先生  13523635214
+                 </view>
+                 <view class="address-box">
+                    河南省洛阳市西工区九都路
+                 </view>     
+             </view>   
+             <view class="right-edit" bindtap="editAddess"></view> 
+        </view>
+         <view class="a-address" >
+             <view class="left-text">
+                 <view class="name-tel">
+                    周先生  13523635214
+                 </view>
+                 <view class="address-box">
+                    河南省郑州市西区九都路52号
+                 </view>     
+             </view>   
+             <view class="right-edit" bindtap="editAddess"></view> 
+        </view>
+    </view>
+    <view class="bottom-box">
+        <view class="add-btn" bindtap="addAddess">新增收货地址</view>
+    </view>
+
+</view>
+
+
+
+ <!-- <view class="a-address"  wx:for-items="{{addressList}}" wx:key="{{index}}">
+             <view class="left-text {{item.dft? 'active':''}}" bindtap="selectTap" data-id="{{item.id}}">
+                 <view class="name-tel">
+                    {{item.contacts}}  {{item.mobile}}
+                 </view>
+                 <view class="address-box">
+                    {{item.addressName}}{{item.doorNumber}}
+                 </view>     
+             </view>   
+             <view class="right-edit" bindtap="editAddess" data-id="{{item.id}}"></view> 
+        </view> -->

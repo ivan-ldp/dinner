@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -66,6 +66,20 @@
 					"id": -1,
 					"name": "pages/dingdan/detail/detail",
 					"pathName": "pages/dingdan/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/dianpuxiangqing/dianpuxiangqing",
+					"pathName": "pages/my/dianpuxiangqing/dianpuxiangqing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addAddress/addAddress",
+					"pathName": "pages/addAddress/addAddress",
 					"scene": null
 				}
 			]

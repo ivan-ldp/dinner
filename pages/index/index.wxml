@@ -7,36 +7,38 @@
     </swiper-item>
   </block>
 </swiper>
-<view class="title">悟空点餐智慧餐厅</view>
-<view class='address'>
-  洛阳市北航科技园3号楼10层k9021
+<view class="title">风味小店</view>
+
+<view class='address1'>
+  营业时间：早上9:00~晚上10:30
 </view>
 <view class='discount'>
   <view class='manjian'>满减</view>
   <view class='youhui'>满400减100，满100减10，满200减20</view>
 </view>
 <view class='dot'>
-  <view class='module'>
+  <view class='module' bindtap='scancode'>
     <image src="../../images/saoyisao.png" class='photo'></image>
-    <view class='content'>扫一扫下单</view>
+    <view class='content1'>扫一扫下单</view>
+    <view>{{result}}</view>
   </view>
   <view class='module' bindtap='jump'>
-    <image src="../../images/waimai.png" class='photo' ></image>
+    <image src="../../images/waimai.png" class='photo'></image>
     <view class='content'>外卖下单</view>
   </view>
   <view class='module'>
     <image src="../../images/yy.png" class='photo'></image>
     <view class='content'>预约下单</view>
   </view>
-  <view class='module'>
-    <image src="../../images/tueijian.png" class='photo'></image>
-    <view class='content'>推荐好友</view>
-  </view>
-  <view class='module'>
+  <button open-type='share' class='module' style="  background-color: #fff;">
+      <image src="../../images/tueijian.png" class='photo'></image>
+      <view class='content' id="hytj">推荐好友</view>
+  </button>
+  <view class='module' bindtap="getLocation">
     <image src="../../images/dianpu.png" class='photo'></image>
     <view class='content'>商铺位置</view>
   </view>
-  <view class='module'>
+  <view class='module'  bindtap="calling">
     <image src="../../images/dianhua.png" class='photo'></image>
     <view class='content'>电话联系</view>
   </view>

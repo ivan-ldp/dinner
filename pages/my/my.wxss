@@ -1,7 +1,6 @@
 /* pages/my/my.wxss */
 .body{
-  /* background-color:  rgb(152, 153, 149);
-  */
+background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568190033287&di=b71f0b0562083bd174676be9d528b75b&imgtype=0&src=http%3A%2F%2Fimg5q.duitang.com%2Fuploads%2Fitem%2F201302%2F19%2F20130219192747_8JZvN.jpeg);
   width: 100%;
   height: 400rpx;
 }
@@ -31,7 +30,7 @@
 .format{
   width: 100%;
   height: 80rpx;
-  color: gray;
+  color: rgb(54, 53, 53);
   background: rgba(0, 0, 0, 0.5);
   margin-top: 30rpx;
   display: flex;
@@ -62,7 +61,7 @@ color: greenyellow；
 }
 .userinfo {
   display: flex;
-  
+  margin-top: 20%;
   align-items: center;
 }
 
@@ -76,7 +75,7 @@ color: greenyellow；
 .userinfo-nickname {
   font-size: 45rpx;
  margin-left: 20rpx;
-  color: rgba(32, 31, 31, 0.534);
+  color: rgba(32, 31, 31, 0.884);
 }
 
 .usermotto {
