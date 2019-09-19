@@ -1,14 +1,14 @@
 <view class="goods" wx:if="{{status==0||item.status==status}}">
 
+<!-- category Begin -->
   <view class="menu-wrapper">
 
     <scroll-view scroll-y="true" style="height: 450px;">
-
-      <view wx:for="{{goods}}" class="menu-item border-1px" bindtap="selectMenu" data-item-index="{{index}}" wx:key="key">
+      <view wx:for="{{sortInfo}}" class="menu-item border-1px" bindtap="selectMenu" data-item-index="{{index}}" wx:key="key">
 
         <view class="text">
 
-          {{item.name}}
+          {{item.categoryName}}
 
         </view>
 
@@ -17,30 +17,31 @@
     </scroll-view>
 
   </view>
+<!-- category End -->
 
   <scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="foods-wrapper">
 
-    <view wx:for="{{goods}}" class="food-list food-list-hook" wx:for-index="parentIndex" wx:key="key">
+    <view wx:for="{{sortInfo}}" class="food-list food-list-hook" wx:for-index="parentIndex" wx:key="key">
 
-      <view id="order{{parentIndex}}" class="title">{{item.name}}</view>
+      <view id="order{{parentIndex+1}}" class="title" bindtap='findByCategoryName' >{     {item.categoryName}}</view>
 
-      <view wx:for="{{item.foods}}" class="food-item" wx:for-item="food" data-food="{{food}}" wx:key="key">
+      <view wx:for="{{goodsInfo}}" class="food-item" wx:for-item="food" data-food="{{food}}" wx:key="key">
 
         <view class="icon">
 
-          <image src="{{food.icon}}" style="width: 57px;height: 57px" data-id="{{food.icon}}" bindtap="togglePopup"></image>
+          <image src="{{food.picUrl}}" style="width: 57px;height: 57px" data-id="{{food.icon}}" bindtap="togglePopup"></image>
 
         </view>
 
         <view class="content">
 
-          <view class="name">{{food.name}}</view>
+          <view class="name">{{food.goodsName}}</view>
 
           <view class="extra">
 
-            <text class="count">推荐:{{food.brand}}</text>
+            <text class="count">描述: {{food.description}}</text>
 
-            <text class="count">口味:{{food.type}}</text>
+            <!-- <text class="count">口味:{{food.type}}</text> -->
 
           </view>
 
@@ -52,7 +53,7 @@
 
 
 
-          <!--cartControl-->
+          <!--cartControl Begin-->
 
           <view class="cartControl-wrapper">
 
@@ -60,7 +61,7 @@
 
               <view name="fade">
 
-                <view class="cart-decrease" wx:if="{{food.Count > 0}}" data-item-index="{{index}}" data-parentIndex="{{parentIndex}}" catchtap="decreaseCart">
+                <view class="cart-decrease" wx:if="{{food.remains > 0}}" data-item-index="{{index}}" data-parentIndex="{{parentIndex}}" catchtap="decreaseCart">
 
                   <view class="inner iconfont icon-jian" style="font-size:24px;color:#00A0DC;"></view>
 
@@ -75,7 +76,7 @@
             </view>
 
           </view>
-
+         <!--cartControl End-->
         </view>
 
       </view>

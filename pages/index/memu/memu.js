@@ -1,152 +1,140 @@
 Page({
 
   data: {
-
+    // 凭借分类查询
+    sortInfo:null,
+     // 凭借Id查询
+    goodsInfo:null,
     goods: [
-      {
+  
+      // {
 
-        "name": "全部",
+      //   "name": "全部",
+      //   "type": 2,
+      //   "foods": [
+      //     {
+      //       "name": "酸爽莲藕",
+      //       "price": 60.5,
+      //       "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+      //       "Count": 0,
+      //       "type": "凉菜",
+      //       "icon": "/images/ms1.jpeg",
+      //     }
 
-        "type": 2,
+      //   ]
 
-        "foods": [
+      // },
+      // {
 
-          {
+      //   "name": "热菜",
 
-            "name": "酸爽莲藕",
+      //   "type": -1,
 
-            "price": 60.5,
+      //   "foods": [
 
-            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+      //     {
 
-            "Count": 0,
+      //       "name": "凉拌茄子",
 
-            "type": "凉菜",
+      //       "price": 20,
 
-            "icon": "/images/ms1.jpeg",
+      //       "brand": "味道酸酸甜甜，还带点辣，挺不错的",
 
-          }
+      //       "Count": 0,
 
-        ]
+      //       "type": "酸甜",
 
-      },
+      //       "icon": "/images/ms1.jpeg",
 
-      {
+      //     },
 
-        "name": "热菜",
+      //   ]
 
-        "type": -1,
+      // },
+      // {
 
-        "foods": [
+      //   "name": "凉菜",
 
-          {
+      //   "type": 2,
 
-            "name": "凉拌茄子",
+      //   "foods": [
 
-            "price": 20,
+      //     {
 
-            "brand": "味道酸酸甜甜，还带点辣，挺不错的",
+      //       "name": "酸爽莲藕",
 
-            "Count": 0,
+      //       "price": 60.5,
 
-            "type": "酸甜",
+      //       "brand": "藕片口感爽脆，凉拌吃清爽又美味",
 
-            "icon": "/images/ms1.jpeg",
+      //       "Count": 0,
 
-          },
+      //       "type": "凉菜",
 
-        ]
+      //       "icon": "/images/ms1.jpeg",
 
-      },
+      //     }
 
-      {
+      //   ]
 
-        "name": "凉菜",
+      // }, 
+      // {
 
-        "type": 2,
+      //   "name": "主食",
 
-        "foods": [
+      //   "type": 2,
 
-          {
+      //   "foods": [
 
-            "name": "酸爽莲藕",
+      //     {
 
-            "price": 60.5,
+      //       "name": "酸爽莲藕",
 
-            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+      //       "price": 60.5,
 
-            "Count": 0,
+      //       "brand": "藕片口感爽脆，凉拌吃清爽又美味",
 
-            "type": "凉菜",
+      //       "Count": 0,
 
-            "icon": "/images/ms1.jpeg",
+      //       "type": "凉菜",
 
-          }
+      //       "icon": "/images/ms1.jpeg",
 
-        ]
+      //     }
 
-      },{
+      //   ]
 
-        "name": "主食",
+      // }, 
+      // {
 
-        "type": 2,
+      //   "name": "饮料",
 
-        "foods": [
+      //   "type": 2,
 
-          {
+      //   "foods": [
 
-            "name": "酸爽莲藕",
+      //     {
 
-            "price": 60.5,
+      //       "name": "酸爽莲藕",
 
-            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
+      //       "price": 60.5,
 
-            "Count": 0,
+      //       "brand": "藕片口感爽脆，凉拌吃清爽又美味",
 
-            "type": "凉菜",
+      //       "Count": 0,
 
-            "icon": "/images/ms1.jpeg",
+      //       "type": "凉菜",
 
-          }
+      //       "icon": "/images/ms1.jpeg",
 
-        ]
+      //     }
 
-      }, {
+      //   ]
 
-        "name": "饮料",
-
-        "type": 2,
-
-        "foods": [
-
-          {
-
-            "name": "酸爽莲藕",
-
-            "price": 60.5,
-
-            "brand": "藕片口感爽脆，凉拌吃清爽又美味",
-
-            "Count": 0,
-
-            "type": "凉菜",
-
-            "icon": "/images/ms1.jpeg",
-
-          }
-
-        ]
-
-      }, 
-
-
-
-
-
-
+      // },
 
     ],
-
+    // goods End
     toView: 'sss',
 
     scrollTop: 100,
@@ -181,8 +169,45 @@ Page({
 
 
   },
+  // 请求商品信息
+  /**
+    * 生命周期函数--监听页面加载
+    */
+  onLoad: function (options) {
+  var that=this;
+    // 页面初始化 options为页面跳转所带来的参数
+    wx.request({
+      url: 'http://localhost:8080/goods/sortList',
+      method: 'post',
+      success: function (res) {
+        // for(var i=0;i<res.data.length;i++){
+        //   console.info(res.data[i]);
+        // }
+        console.info(res.data);
+        that.setData({sortInfo:res.data});
+      }
+    }),
+      wx.request({
+      url: 'http://localhost:8080/goods/goodsList2',
+        method: 'post',
+        success: function (res) {
+          // for(var i=0;i<res.data.length;i++){
+          //   console.info(res.data[i]);
+          // }
+          console.info(res.data);
+          that.setData({ goodsInfo: res.data });
+        }
+      }),
+   
 
-  selectMenu: function(e) {
+    this.setData({
+
+      payDesc: this.payDesc()
+
+    });
+
+  },
+  selectMenu: function (e) {
 
     var index = e.currentTarget.dataset.itemIndex;
 
@@ -198,7 +223,7 @@ Page({
 
   //移除商品
 
-  decreaseCart: function(e) {
+  decreaseCart: function (e) {
 
     var index = e.currentTarget.dataset.itemIndex;
 
@@ -206,7 +231,7 @@ Page({
 
     this.data.goods[parentIndex].foods[index].Count--
 
-      var name = this.data.goods[parentIndex].foods[index].name;
+    var name = this.data.goods[parentIndex].foods[index].name;
 
     var num = this.data.goods[parentIndex].foods[index].Count;
 
@@ -287,7 +312,7 @@ Page({
 
   },
 
-  decreaseShopCart: function(e) {
+  decreaseShopCart: function (e) {
 
     console.log('1');
 
@@ -346,7 +371,7 @@ Page({
 
   },
 
-  addShopCart: function(e) {
+  addShopCart: function (e) {
 
     this.addCart(e);
 
@@ -354,7 +379,7 @@ Page({
 
   //计算总价
 
-  calTotalPrice: function() {
+  calTotalPrice: function () {
 
     var carArray = this.data.carArray;
 
@@ -408,7 +433,7 @@ Page({
 
   //购物车
 
-  toggleList: function() {
+  toggleList: function () {
 
     if (!this.data.totalCount) {
 
@@ -430,7 +455,7 @@ Page({
 
   },
 
-  cartShow: function(fold) {
+  cartShow: function (fold) {
 
     console.log(fold);
 
@@ -462,7 +487,7 @@ Page({
 
   */
 
-  togglePopup: function(event) {
+  togglePopup: function (event) {
 
     var image_path = event.currentTarget.dataset.id;
 
@@ -478,7 +503,7 @@ Page({
 
 
 
-  tabChange: function(e) {
+  tabChange: function (e) {
 
     var showtype = e.target.dataset.type;
 
@@ -492,37 +517,27 @@ Page({
 
 
 
-  onLoad: function(options) {
+  
 
-    // 页面初始化 options为页面跳转所带来的参数
-
-    this.setData({
-
-      payDesc: this.payDesc()
-
-    });
-
-  },
-
-  onReady: function() {
+  onReady: function () {
 
     // 页面渲染完成
 
   },
 
-  onShow: function() {
+  onShow: function () {
 
     // 页面显示
 
   },
 
-  onHide: function() {
+  onHide: function () {
 
     // 页面隐藏
 
   },
 
-  onUnload: function() {
+  onUnload: function () {
 
     // 页面关闭
 
