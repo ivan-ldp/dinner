@@ -4,9 +4,10 @@
   <view class="menu-wrapper">
 
     <scroll-view scroll-y="true" style="height: 450px;">
-      <view wx:for="{{sortInfo}}" class="menu-item border-1px" bindtap="selectMenu" data-item-index="{{index}}" wx:key="key">
 
-        <view class="text">
+      <view wx:for="{{sortInfo}}" class="menu-item border-1px" bindtap="selectMenu" data-item-index="{{index}}"  wx:for-index="Index" wx:key="key">
+<!-- 获取 当前的id -->
+        <view class="text" data-id="{{Index+1}}" bindtap="catchIndex">
 
           {{item.categoryName}}
 
@@ -21,15 +22,15 @@
 
   <scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="foods-wrapper">
 
-    <view wx:for="{{sortInfo}}" class="food-list food-list-hook" wx:for-index="parentIndex" wx:key="key">
+    <view class="food-list food-list-hook" wx:for-index="parentIndex" wx:key="key">
 
-      <view id="order{{parentIndex+1}}" class="title" bindtap='findByCategoryName' >{     {item.categoryName}}</view>
+      <!-- <view id="order{{parentIndex+1}}" class="title"  >{{item.categoryName}}</view> -->
 
       <view wx:for="{{goodsInfo}}" class="food-item" wx:for-item="food" data-food="{{food}}" wx:key="key">
 
         <view class="icon">
 
-          <image src="{{food.picUrl}}" style="width: 57px;height: 57px" data-id="{{food.icon}}" bindtap="togglePopup"></image>
+          <!-- <image src="{{food.picUrl}}" style="width: 57px;height: 57px" data-id="{{food.icon}}" bindtap="togglePopup"></image> -->
 
         </view>
 
@@ -67,9 +68,9 @@
 
                 </view>
 
-                <view class="cart-count" wx:if="{{food.Count > 0 }}">{{food.Count}}</view>
+                <view class="cart-count" wx:if="{{food.remains > 0 }}">{{food.Count}}</view>
 
-                <view class=" iconfont icon-jia cart-add " style="color:#00A0DC; " data-item-index="{{index}}" data-parentIndex="{{parentIndex}}" catchtap="addCart"></view>
+                <view class=" iconfont icon-jia cart-add " style="color:#00A0DC; " data-item="{{index}}" data-parentIndex="{{parentIndex}}" catchtap="addCart"></view>
 
               </view>
 
@@ -78,7 +79,7 @@
           </view>
          <!--cartControl End-->
         </view>
-
+<!-- content End -->
       </view>
 
     </view>

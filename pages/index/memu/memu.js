@@ -180,10 +180,6 @@ Page({
       url: 'http://localhost:8080/goods/sortList',
       method: 'post',
       success: function (res) {
-        // for(var i=0;i<res.data.length;i++){
-        //   console.info(res.data[i]);
-        // }
-        console.info(res.data);
         that.setData({sortInfo:res.data});
       }
     }),
@@ -191,10 +187,7 @@ Page({
       url: 'http://localhost:8080/goods/goodsList2',
         method: 'post',
         success: function (res) {
-          // for(var i=0;i<res.data.length;i++){
-          //   console.info(res.data[i]);
-          // }
-          console.info(res.data);
+         // console.info(res.data);
           that.setData({ goodsInfo: res.data });
         }
       }),
@@ -205,8 +198,8 @@ Page({
       payDesc: this.payDesc()
 
     });
-
   },
+  
   selectMenu: function (e) {
 
     var index = e.currentTarget.dataset.itemIndex;
@@ -217,10 +210,31 @@ Page({
 
     })
 
-    console.log(this.data.toView);
+    // console.log(this.data.toView);
 
   },
+  //捕捉当前的id值
+  catchIndex: function (e){
+   console.log(e);
+    var that=this;
+    var categoryId = e.currentTarget.dataset.id;
+    console.info(categoryId);
+     wx.request({
+       url: 'http://localhost:8080/goods/goodsList2',
+       data:{
+          categoryId: categoryId
+       },
+       header: {
+         'content-type': 'application/x-www-form-urlencoded',
+       },
+       method: 'POST',
+       success: function (res) {
+         console.info(res.data);
+         that.setData({goodsInfo: res.data});
+       }
+     })
 
+  },
   //移除商品
 
   decreaseCart: function (e) {
@@ -323,8 +337,8 @@ Page({
   //添加到购物车
 
   addCart(e) {
-
-    var index = e.currentTarget.dataset.itemIndex;
+    var count = e.currentTarget.dataset.item+1;
+    var index = e.currentTarget.dataset.item;
 
     var parentIndex = e.currentTarget.dataset.parentindex;
 
@@ -332,11 +346,11 @@ Page({
 
     var mark = 'a' + index + 'b' + parentIndex
 
-    var price = this.data.goods[parentIndex].foods[index].price;
+    var price = this.data.goodsInfo[index].price;
 
     var num = this.data.goods[parentIndex].foods[index].Count;
 
-    var name = this.data.goods[parentIndex].foods[index].name;
+    var name = this.data.goodsInfo[index].name;
 
     var obj = {
       price: price,
